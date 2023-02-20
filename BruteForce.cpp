@@ -4,9 +4,9 @@ using namespace std;
 string pass="aA090";//suppose that this is vicitim password
 string AllPossibleCharacters="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                              "1234567890";
-void BruteForce(string Selection,int length,bool found=false){
+void BruteForce(string Selection,int length,bool found=false){//length = maxlength of trying strings
     cout<<Selection<<endl;
-    if(Selection==pass){
+    if(Selection==pass){//testing password if it is vicitim's password
         cout<<"Password Found:"<<Selection<<endl;
         found = true;
         return;
@@ -21,6 +21,6 @@ void BruteForce(string Selection,int length,bool found=false){
 }
 
 int main(){
-    BruteForce("",5);
+    BruteForce("",5);//testing...
     return 0;
 }
